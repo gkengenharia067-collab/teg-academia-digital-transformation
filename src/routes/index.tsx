@@ -59,7 +59,7 @@ function Home() {
             Campo Grande - MS
           </span>
           <h1 className="font-display text-5xl leading-none text-foreground sm:text-7xl md:text-8xl">
-            TEG <span className="text-primary">ACADEMIA</span>
+            TEG <span className="text-gradient-brand">ACADEMIA</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground sm:text-xl">
             Potencialize sua força, transforme sua vida, conquiste sua melhor versão.
@@ -84,7 +84,7 @@ function Home() {
             Diferenciais
           </span>
           <h2 className="mt-2 font-display text-4xl sm:text-5xl">
-            Por que treinar na <span className="text-primary">TEG?</span>
+            Por que treinar na <span className="text-gradient-brand">TEG?</span>
           </h2>
         </div>
 
@@ -107,7 +107,7 @@ function Home() {
       <section className="border-y border-border bg-card/40 py-20">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h2 className="font-display text-4xl sm:text-5xl">
-            Pronto para sua <span className="text-primary">transformação?</span>
+            Pronto para sua <span className="text-gradient-brand">transformação?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Conheça nossas modalidades e escolha o plano ideal para você.
@@ -121,7 +121,7 @@ function Home() {
             </Link>
             <Link
               to="/planos"
-              className="rounded-md bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:shadow-[var(--shadow-glow)]"
+              className="rounded-md bg-gradient-brand px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white hover:shadow-[var(--shadow-glow)]"
             >
               Ver Planos
             </Link>

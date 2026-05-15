@@ -91,7 +91,7 @@ function Planos() {
               }`}
             >
               {p.highlight && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-bold uppercase tracking-wider text-primary-foreground">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-brand px-4 py-1 text-xs font-bold uppercase tracking-wider text-white">
                   Mais popular
                 </span>
               )}
@@ -100,7 +100,7 @@ function Planos() {
 
               <div className="my-6 flex items-baseline gap-1">
                 <span className="text-2xl text-muted-foreground">R$</span>
-                <span className="font-display text-6xl text-primary">{p.price}</span>
+                <span className="font-display text-6xl text-gradient-brand">{p.price}</span>
                 <span className="text-sm text-muted-foreground">{p.period}</span>
               </div>
 
