@@ -67,7 +67,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "TEG Academia em Campo Grande - MS. Musculação, treinamento funcional, ambiente climatizado e app de treinos. Agende sua aula grátis.",
       },
       { name: "author", content: "TEG Academia" },
-      { property: "og:title", content: "TEG Academia — Potencialize sua força" },
+      { property: "og:title", content: "TEG Academia — Musculação e Funcional em Campo Grande - MS" },
       {
         property: "og:description",
         content:
@@ -75,6 +75,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "TEG Academia — Musculação e Funcional em Campo Grande - MS" },
+      { name: "description", content: "TEG Academia: Digital Transformation is a modern, responsive website for TEG Academia, showcasing services and plans." },
+      { property: "og:description", content: "TEG Academia: Digital Transformation is a modern, responsive website for TEG Academia, showcasing services and plans." },
+      { name: "twitter:description", content: "TEG Academia: Digital Transformation is a modern, responsive website for TEG Academia, showcasing services and plans." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ccf6445e-3e92-4e98-b933-08d0ff778da1/id-preview-b2217919--a3e2d415-ab7f-423f-9e04-5d19a09b348b.lovable.app-1778887113977.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ccf6445e-3e92-4e98-b933-08d0ff778da1/id-preview-b2217919--a3e2d415-ab7f-423f-9e04-5d19a09b348b.lovable.app-1778887113977.png" },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
