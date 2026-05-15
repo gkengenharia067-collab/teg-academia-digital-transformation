@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Dumbbell } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/teg-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -15,11 +16,17 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-lg">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2 font-display text-2xl tracking-wider">
-          <Dumbbell className="h-7 w-7 text-primary" />
-          <span>
-            TEG <span className="text-primary">ACADEMIA</span>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+        <Link to="/" className="flex items-center gap-3" aria-label="TEG Academia">
+          <img
+            src={logo}
+            alt="TEG Academia"
+            width={48}
+            height={48}
+            className="h-11 w-11 rounded-md object-cover"
+          />
+          <span className="font-display text-2xl tracking-wider">
+            TEG <span className="text-gradient-brand">ACADEMIA</span>
           </span>
         </Link>
 

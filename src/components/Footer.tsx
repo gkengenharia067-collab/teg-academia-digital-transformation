@@ -1,14 +1,17 @@
-import { MapPin, Mail, Clock, Dumbbell } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 import { DEVELOPER_WHATSAPP, buildWhatsAppLink } from "@/lib/whatsapp";
+import logo from "@/assets/teg-logo.png";
 
 export function Footer() {
   return (
     <footer className="border-t border-border/60 bg-card/40">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2 font-display text-2xl tracking-wider">
-            <Dumbbell className="h-6 w-6 text-primary" />
-            TEG <span className="text-primary">ACADEMIA</span>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="TEG Academia" width={44} height={44} className="h-11 w-11 rounded-md object-cover" />
+            <span className="font-display text-2xl tracking-wider">
+              TEG <span className="text-gradient-brand">ACADEMIA</span>
+            </span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground">
             Potencialize sua força, transforme sua vida, conquiste sua melhor versão.
