@@ -1,5 +1,6 @@
-import { MapPin, Mail, Clock, Dumbbell } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 import { DEVELOPER_WHATSAPP, buildWhatsAppLink } from "@/lib/whatsapp";
+import { TegLogo } from "@/components/TegLogo";
 
 export function Footer() {
   return (
@@ -7,8 +8,8 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 font-display text-2xl tracking-wider">
-            <Dumbbell className="h-6 w-6 text-primary" />
-            TEG <span className="text-primary">ACADEMIA</span>
+            <TegLogo className="h-6 w-auto" />
+            TEG <span className="text-gradient">ACADEMIA</span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground">
             Potencialize sua força, transforme sua vida, conquiste sua melhor versão.
@@ -16,7 +17,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-gradient">
             Endereço
           </h3>
           <p className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -26,7 +27,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-gradient">
             Contato
           </h3>
           <a
@@ -39,7 +40,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-gradient">
             Horários
           </h3>
           <div className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -61,7 +62,7 @@ export function Footer() {
               href={buildWhatsAppLink("Olá Gabriel! Vi seu trabalho na TEG Academia.", DEVELOPER_WHATSAPP)}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-primary hover:underline"
+              className="font-semibold text-gradient hover:underline"
             >
               Gabriel Cantelle
             </a>

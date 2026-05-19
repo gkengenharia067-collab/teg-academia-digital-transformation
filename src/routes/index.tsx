@@ -7,16 +7,16 @@ import { WA_MESSAGES } from "@/lib/whatsapp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "TEG Academia — Musculação em Campo Grande | Aula Grátis" },
+      { title: "TEG Academia — Musculação em Campo Grande" },
       {
         name: "description",
         content:
-          "Academia em Campo Grande - MS com musculação, funcional, ambiente climatizado e app de treinos. Agende sua aula experimental gratuita.",
+          "Academia em Campo Grande - MS com musculação, funcional, ambiente climatizado e app de treinos. Venha treinar na melhor academia da região.",
       },
       { property: "og:title", content: "TEG Academia — Sua melhor versão começa aqui" },
       {
         property: "og:description",
-        content: "Musculação e funcional em Campo Grande. Agende sua aula grátis.",
+        content: "Musculação e funcional em Campo Grande. Conquiste sua melhor versão na TEG.",
       },
     ],
   }),
@@ -55,22 +55,22 @@ function Home() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/60 to-background" />
 
         <div className="mx-auto flex min-h-[88vh] max-w-7xl flex-col items-start justify-center px-4 py-24 sm:px-6">
-          <span className="mb-4 inline-block rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-primary">
+          <span className="mb-4 inline-block rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-gradient">
             Campo Grande - MS
           </span>
           <h1 className="font-display text-5xl leading-none text-foreground sm:text-7xl md:text-8xl">
-            TEG <span className="text-primary">ACADEMIA</span>
+            TEG <span className="text-gradient">ACADEMIA</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground sm:text-xl">
             Potencialize sua força, transforme sua vida, conquiste sua melhor versão.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <WhatsAppButton message={WA_MESSAGES.hero} className="text-base">
-              Agende uma Aula Grátis
+              Matricule-se Agora
             </WhatsAppButton>
             <Link
               to="/planos"
-              className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-semibold uppercase tracking-wider text-foreground transition-colors hover:border-primary hover:text-primary"
+              className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-semibold uppercase tracking-wider text-foreground transition-colors hover:border-primary"
             >
               Ver Planos <ArrowRight className="h-4 w-4" />
             </Link>
@@ -80,11 +80,11 @@ function Home() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="mb-12 text-center">
-          <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+          <span className="text-xs font-semibold uppercase tracking-widest text-gradient">
             Diferenciais
           </span>
           <h2 className="mt-2 font-display text-4xl sm:text-5xl">
-            Por que treinar na <span className="text-primary">TEG?</span>
+            Por que treinar na <span className="text-gradient">TEG?</span>
           </h2>
         </div>
 
@@ -107,7 +107,7 @@ function Home() {
       <section className="border-y border-border bg-card/40 py-20">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h2 className="font-display text-4xl sm:text-5xl">
-            Pronto para sua <span className="text-primary">transformação?</span>
+            Pronto para sua <span className="text-gradient">transformação?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Conheça nossas modalidades e escolha o plano ideal para você.
@@ -115,13 +115,13 @@ function Home() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               to="/modalidades"
-              className="rounded-md border border-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary hover:bg-primary hover:text-primary-foreground"
+              className="rounded-md border border-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-gradient hover:bg-gradient-primary hover:text-primary-foreground"
             >
               Modalidades
             </Link>
             <Link
               to="/planos"
-              className="rounded-md bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:shadow-[var(--shadow-glow)]"
+              className="rounded-md bg-gradient-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:shadow-[var(--shadow-glow)]"
             >
               Ver Planos
             </Link>

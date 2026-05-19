@@ -6,7 +6,7 @@ export function buildWhatsAppLink(message: string, number: string = WHATSAPP_NUM
 }
 
 export const WA_MESSAGES = {
-  hero: "Olá! Vi o site novo e gostaria de agendar uma aula experimental gratuita. Podem me ajudar?",
+  hero: "Olá! Vi o site novo e gostaria de mais informações para me matricular. Podem me ajudar?",
   musculacao: "Olá! Me interessei pelo plano de Musculação e gostaria de mais informações.",
   funcional: "Olá! Quero saber mais sobre o plano de Treinamento Funcional. Ainda tem vaga?",
   mensal: "Olá! Quero fazer o Plano Mensal de R$119,90. Como me matriculo hoje?",

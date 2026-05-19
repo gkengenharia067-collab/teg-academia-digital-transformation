@@ -43,11 +43,11 @@ function Sobre() {
     <>
       <section className="bg-card/40 py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+          <span className="text-xs font-semibold uppercase tracking-widest text-gradient">
             Sobre nós
           </span>
           <h1 className="mt-2 font-display text-5xl sm:text-6xl">
-            Mais que uma <span className="text-primary">academia</span>
+            Mais que uma <span className="text-gradient">academia</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
             A TEG Academia, fundada em dezembro de 2024, foi criada para transformar vidas com

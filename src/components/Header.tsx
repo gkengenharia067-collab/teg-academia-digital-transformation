@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Dumbbell } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { TegLogo } from "@/components/TegLogo";
 
 const links = [
   { to: "/", label: "Home" },
@@ -17,9 +18,9 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2 font-display text-2xl tracking-wider">
-          <Dumbbell className="h-7 w-7 text-primary" />
+          <TegLogo className="h-8 w-auto" />
           <span>
-            TEG <span className="text-primary">ACADEMIA</span>
+            TEG <span className="text-gradient">ACADEMIA</span>
           </span>
         </Link>
 
@@ -29,7 +30,7 @@ export function Header() {
               key={l.to}
               to={l.to}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-              activeProps={{ className: "text-primary" }}
+              activeProps={{ className: "text-gradient" }}
               activeOptions={{ exact: l.to === "/" }}
             >
               {l.label}
@@ -55,7 +56,7 @@ export function Header() {
                 to={l.to}
                 onClick={() => setOpen(false)}
                 className="py-3 text-base font-medium text-foreground"
-                activeProps={{ className: "text-primary" }}
+                activeProps={{ className: "text-gradient" }}
                 activeOptions={{ exact: l.to === "/" }}
               >
                 {l.label}
