@@ -36,11 +36,11 @@ function Contato() {
     <>
       <section className="bg-card/40 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+          <span className="text-xs font-semibold uppercase tracking-widest text-gradient">
             Contato
           </span>
           <h1 className="mt-2 font-display text-5xl sm:text-6xl">
-            Fale <span className="text-primary">conosco</span>
+            Fale <span className="text-gradient">conosco</span>
           </h1>
         </div>
       </section>
@@ -87,7 +87,7 @@ function Contato() {
             </div>
             <button
               type="submit"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-all hover:shadow-[var(--shadow-glow)]"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-all hover:shadow-[var(--shadow-glow)]"
             >
               <Send className="h-4 w-4" /> Enviar via WhatsApp
             </button>
@@ -111,7 +111,7 @@ function Contato() {
                 <br />
                 Campo Grande - MS, 79052-061
               </p>
-              <span className="mt-2 inline-block text-xs font-semibold text-primary">
+              <span className="mt-2 inline-block text-xs font-semibold text-gradient">
                 Ver no Google Maps →
               </span>
             </div>

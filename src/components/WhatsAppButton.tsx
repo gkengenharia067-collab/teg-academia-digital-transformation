@@ -21,8 +21,8 @@ export function WhatsAppButton({
     "inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-wider transition-all duration-200";
   const styles =
     variant === "primary"
-      ? "bg-gradient-brand text-white shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-glow)] hover:-translate-y-0.5"
-      : "border border-primary text-primary hover:bg-primary hover:text-primary-foreground";
+      ? "bg-gradient-primary text-primary-foreground hover:shadow-[var(--shadow-glow)] hover:-translate-y-0.5"
+      : "border border-primary text-gradient hover:bg-gradient-primary hover:text-primary-foreground";
 
   return (
     <a

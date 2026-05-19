@@ -67,11 +67,11 @@ function Planos() {
     <>
       <section className="bg-card/40 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+          <span className="text-xs font-semibold uppercase tracking-widest text-gradient">
             Planos
           </span>
           <h1 className="mt-2 font-display text-5xl sm:text-6xl">
-            Escolha seu <span className="text-primary">plano</span>
+            Escolha seu <span className="text-gradient">plano</span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Treine sem complicação. Sem taxa de matrícula, sem fidelidade obrigatória.
@@ -84,14 +84,14 @@ function Planos() {
           {plans.map((p) => (
             <div
               key={p.name}
-              className={`relative flex flex-col rounded-xl border bg-card p-8 transition-all ${
+              className={`relative flex flex-col rounded-xl p-8 transition-all ${
                 p.highlight
-                  ? "border-primary shadow-[var(--shadow-glow)] md:scale-105"
-                  : "border-border hover:border-primary/60"
+                  ? "border-gradient-primary shadow-[var(--shadow-glow-strong)] md:scale-105"
+                  : "border border-border hover:border-primary/60 bg-card"
               }`}
             >
               {p.highlight && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-brand px-4 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-primary px-4 py-1 text-xs font-bold uppercase tracking-wider text-primary-foreground">
                   Mais popular
                 </span>
               )}
@@ -100,7 +100,7 @@ function Planos() {
 
               <div className="my-6 flex items-baseline gap-1">
                 <span className="text-2xl text-muted-foreground">R$</span>
-                <span className="font-display text-6xl text-gradient-brand">{p.price}</span>
+                <span className="font-display text-6xl text-gradient">{p.price}</span>
                 <span className="text-sm text-muted-foreground">{p.period}</span>
               </div>
 

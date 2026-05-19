@@ -43,11 +43,11 @@ function Modalidades() {
     <>
       <section className="bg-card/40 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+          <span className="text-xs font-semibold uppercase tracking-widest text-gradient">
             Modalidades
           </span>
           <h1 className="mt-2 font-display text-5xl sm:text-6xl">
-            Escolha seu <span className="text-primary">treino</span>
+            Escolha seu <span className="text-gradient">treino</span>
           </h1>
         </div>
       </section>

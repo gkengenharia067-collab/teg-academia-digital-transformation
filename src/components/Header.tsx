@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/teg-logo.png";
+import { TegLogo } from "@/components/TegLogo";
 
 const links = [
   { to: "/", label: "Home" },
@@ -16,17 +16,11 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-lg">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link to="/" className="flex items-center gap-3" aria-label="TEG Academia">
-          <img
-            src={logo}
-            alt="TEG Academia"
-            width={48}
-            height={48}
-            className="h-11 w-11 rounded-md object-cover"
-          />
-          <span className="font-display text-2xl tracking-wider">
-            TEG <span className="text-gradient-brand">ACADEMIA</span>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+        <Link to="/" className="flex items-center gap-2 font-display text-2xl tracking-wider">
+          <TegLogo className="h-8 w-auto" />
+          <span>
+            TEG <span className="text-gradient">ACADEMIA</span>
           </span>
         </Link>
 
@@ -36,7 +30,7 @@ export function Header() {
               key={l.to}
               to={l.to}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-              activeProps={{ className: "text-primary" }}
+              activeProps={{ className: "text-gradient" }}
               activeOptions={{ exact: l.to === "/" }}
             >
               {l.label}
@@ -62,7 +56,7 @@ export function Header() {
                 to={l.to}
                 onClick={() => setOpen(false)}
                 className="py-3 text-base font-medium text-foreground"
-                activeProps={{ className: "text-primary" }}
+                activeProps={{ className: "text-gradient" }}
                 activeOptions={{ exact: l.to === "/" }}
               >
                 {l.label}
